@@ -4,12 +4,14 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --config webpack.dev.js --open",
+    "dev": "webpack --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js"
   },
   "repository": "https://github.com/adel1982/js-vanilla-netflix-clone.git",
   "author": "Adel Kamel <adelkamel1982@gmail.com>",
   "license": "MIT",
   "devDependencies": {
+    "autoprefixer": "^9.5.1",
     "css-loader": "^2.1.1",
     "file-loader": "^3.0.1",
     "html-loader": "^0.5.5",
@@ -17,6 +19,10 @@
     "mini-css-extract-plugin": "^0.7.0",
     "node-sass": "^4.12.0",
     "optimize-css-assets-webpack-plugin": "^5.0.1",
+    "postcss": "^7.0.16",
+    "postcss-import": "^12.0.1",
+    "postcss-loader": "^3.0.0",
+    "postcss-preset-env": "^6.6.0",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.1",
     "webpack": "^4.32.2",

@@ -12,7 +12,14 @@ module.exports = {
         use: ["html-loader"]
       },
       {
-        test: /\.(gif|png|jpeg|jpg|svg|ico)$/i,
+        test: /\.ico$/,
+        loader: "file-loader",
+        options: {
+          name: "[name].[ext]"
+        }
+      },
+      {
+        test: /\.(gif|png|jpeg|jpg|svg)$/i,
         use: {
           loader: "file-loader",
           options: {

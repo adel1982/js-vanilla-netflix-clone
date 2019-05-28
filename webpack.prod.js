@@ -20,6 +20,7 @@ module.exports = merge(common, {
         use: [
           MiniCssExtractPlugin.loader, // 3 - Extract CSS into files
           "css-loader", // 2 - Interprets @import and url() like import/require() and will resolve them.
+          "postcss-loader",
           "sass-loader" // 1 - Loads a Sass/SCSS file and compiles it to CSS.
         ]
       }
