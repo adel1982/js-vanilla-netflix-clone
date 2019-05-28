@@ -1,2 +1,2 @@
-import "./scss/main.scss";
-console.log("hello from Webpack 4");
+import './scss/main.scss'
+console.log('hello from Webpack 4')
