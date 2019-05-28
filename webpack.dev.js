@@ -4,6 +4,8 @@ const merge = require("webpack-merge");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const CleanWebpackPlugin = require("clean-webpack-plugin");
 
+const webpackPort = 2000;
+
 module.exports = merge(common, {
   mode: "development",
   output: {
@@ -22,6 +24,10 @@ module.exports = merge(common, {
         ]
       }
     ]
+  },
+  devServer: {
+    port: webpackPort,
+    contentBase: path.resolve(__dirname, "src")
   },
   plugins: [
     new CleanWebpackPlugin(),
