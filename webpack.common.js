@@ -12,6 +12,11 @@ module.exports = {
         use: ["html-loader"]
       },
       {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        loader: "babel-loader"
+      },
+      {
         test: /\.ico$/,
         loader: "file-loader",
         options: {
