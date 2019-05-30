@@ -9,8 +9,6 @@
 	cursor: pointer;
 	display: inline-block;
 	font-size: 1rem;
-	margin-right: .5rem;
-	padding: .4rem 1.3rem;
 	text-align: center;
 	&:hover {
 		opacity: .9;
@@ -19,13 +17,10 @@
 .btn-rounded {
 	border-radius: 5px;
 }
+.btn-small {
+	padding: 0.5rem 1rem;
+}
 .btn-xl {
 	font-size: 2rem;
-	padding: 1.5rem 2.1rem;
-	text-transform: uppercase;
-}
-.btn-lg {
-	font-size: 1rem;
-	padding: 0.8rem 1.3rem;
-	text-transform: uppercase;
+	padding: 1rem 1.5rem;
 }
