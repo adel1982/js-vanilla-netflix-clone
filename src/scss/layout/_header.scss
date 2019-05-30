@@ -1,0 +1,37 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+.showcase {
+  background: image("background.jpg") no-repeat center center/cover;
+  position: relative;
+  width: 100%; height: 93vh;
+  .showcase-top {
+    outline: 1px dashed orangered;
+    height: 90px;
+    padding-top: 1.5rem;
+    position: relative;
+  }
+  .showcase-logo {
+    position: absolute; top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width:167px; height:45px; 
+  }
+  .showcase-btn {
+    position: absolute; top: 50%; right: 0;
+    transform: translate(-50%, -50%);
+  }
+  .showcase-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 9rem auto 0;
+    position: relative;
+    text-align: center;
+    &.title-01 {
+      //color: $title-color;
+      font-size: 5.2rem;
+      font-weight: 700;
+    }
+  }
+}
