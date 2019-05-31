@@ -1,0 +1,76 @@
+/**
+ * Tabs menu 
+ */
+.tabs {
+	background-color: #141414;
+	padding: 1rem 0 0;
+	.container ul {
+		display: grid;
+		align-items: center;
+		justify-content: center;
+		grid-gap: 1rem;
+		grid-template-columns: repeat(3, 1fr);
+		padding: 0;
+		text-align: center;
+	}
+	.tab-item {
+		border-bottom: 3px solid #3d3d3d;
+		&:hover {
+			color: #fff;
+			cursor: pointer;
+		}
+	}
+	.tab-active {
+		border-bottom: 4px solid $brand-color;
+	}
+}
+.tab-content {
+	padding: 3rem 0;
+	color: #fff;
+}
+/**
+ * Tabs Content 1
+ */
+.tab-1-content-inner {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 2rem;
+	align-items: center;
+	justify-content: center;
+}
+/**
+ * Tabs Content 2
+ */
+.tab-2-content-top {
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	grid-gap: 1rem;
+	justify-content: center;
+	align-items: center;
+}
+.tab-2-content-bottom {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 2rem;
+	justify-content: center;
+	align-items: center;
+	margin-top: 2rem;
+	text-align: center;
+	p {
+		margin: 0;
+	}
+	img {
+		width: 100%; height: auto;
+	}
+}
+/**
+ * Tables
+ */
+.table {
+	.fa-times {
+		color: $brand-color;
+	}
+	.fa-check {
+		color: green;
+	}
+}

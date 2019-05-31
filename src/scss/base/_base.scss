@@ -21,6 +21,10 @@ html {
   box-sizing: inherit;
 }
 
+body {
+  background: $bg-color;
+}
+
 /**
  * Basic styles for links
  */
@@ -32,4 +36,32 @@ a {
     color: #fff;
     text-decoration: none;
   }
+}
+
+/**
+ * List
+ */
+li {
+  list-style: none;
+}
+
+/**
+ * Text
+ */
+.text-01 {
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.25;
+  margin: 0 0 2rem;  
+}
+
+.text-02 {
+  font-size: 1rem;
+  line-height: 1.25;
+}
+
+.text-03 {
+  color: #999;
+  font-size: 0.9rem;
+  line-height: 1.25;
 }
