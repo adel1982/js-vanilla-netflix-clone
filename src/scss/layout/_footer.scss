@@ -1,3 +1,26 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the footer of the site/application.
 // -----------------------------------------------------------------------------
+
+.footer {
+	margin: 1rem auto;
+	overflow: auto;
+	.phone-number {
+		margin-bottom: 1.5rem;
+	}
+	.footer-cols {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		grid-gap: 2rem;
+		li {
+			line-height: 1.9;
+		}
+	}
+	a {
+		color: #999;
+		font-size: .9rem;
+		@include on-event() {
+			color: #fff;
+		}
+	}
+}
