@@ -41,20 +41,17 @@ a {
 /**
  * List
  */
-li {
-  list-style: none;
+ul {
+  padding: 0;
+  li {
+    list-style: none;
+  }
 }
+
 
 /**
  * Text
  */
-.text-01 {
-  font-weight: 400;
-  font-size: 1.5rem;
-  line-height: 1.25;
-  margin: 0 0 2rem;  
-}
-
 .text-02 {
   font-size: 1rem;
   line-height: 1.25;
