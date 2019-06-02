@@ -28,7 +28,10 @@
 	font-size: 2rem;
 	padding: 1rem 1.5rem;
 	@include md-(tab) {
-		font-size: 1.5rem;
+		font-size: 3vw;
 		padding: .5rem 1rem;
+	}
+	@include md-(phone) {
+		font-size: 4vw;
 	}
 }

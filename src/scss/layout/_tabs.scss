@@ -3,7 +3,8 @@
  */
 
 #tab-1-content,
-#tab-2-content {
+#tab-2-content,
+#tab-3-content {
   display: none;
 }
 
@@ -33,9 +34,18 @@
 	.tab-active {
 		border-bottom: 4px solid $brand-color;
 	}
+	.description {
+		font-size: 1rem;
+		@include md-(phone) {
+			font-size: 3vw;
+		}
+		@include md-(medium-phone) {
+			font-size: 5vw;
+		}
+	}
 }
 .tab-content {
-	padding: 3rem 0;
+	padding: 1rem 0;
 	color: #fff;
 }
 /**

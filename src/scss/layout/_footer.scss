@@ -12,8 +12,14 @@
 		display: grid;
 		grid-template-columns: repeat(4, 1fr);
 		grid-gap: 2rem;
-		@include md-(tab) {
-			
+		@include md-(phone) {
+			grid-template-columns: repeat(2, 1fr);
+		}
+		@include md-(medium-phone) {
+			//grid-template-columns: 1fr;
+		}
+		ul {
+			margin: 0
 		}
 		li {
 			line-height: 1.9;

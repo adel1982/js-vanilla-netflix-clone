@@ -48,6 +48,11 @@
       @content;
     }
   }
+  @if $breakpoint == medium-phone {
+    @media (max-width: 420px) { 
+      @content;
+    }
+  }
   @if $breakpoint == small-phone {
     @media (max-width: 320px) {  
       @content;

@@ -44,6 +44,12 @@
     font-size: 1.5rem;
     line-height: 1.25;
     margin: 0 0 2rem;
+    @include md-(tab) {
+      font-size: 3vw;
+    }
+    @include md-(phone) {
+      font-size: 4vw;
+    }
   }
   .showcase-btn {
     position: absolute; top: 50%; right: 0;
@@ -64,6 +70,12 @@
       font-weight: 700;
       line-height: 1.1;
       margin: 0 0 2rem;
+      @include md-(tab) {
+        font-size: 6vw;
+      }
+      @include md-(phone) {
+      font-size: 7vw;
+      }
     }
   }
 }
