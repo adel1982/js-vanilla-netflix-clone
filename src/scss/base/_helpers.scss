@@ -24,6 +24,10 @@
   padding-left: 2rem; /* 3 */
   padding-right: 2rem; /* 3 */
   width: 100%; /* 1 */
+  @include md-(phone) {
+		padding-left: 1rem; 
+    padding-right: 1rem;
+	}
 }
 
 /**

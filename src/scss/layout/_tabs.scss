@@ -105,9 +105,17 @@
 	width: 100%;
 	.fa-times {color: $brand-color;}
 	.fa-check {color: green;}
-
+	@include md-(phone) {
+		.fa-times, .fa-check,.tin-pricing-table-row  {
+			font-size: .8rem;
+		}
+	}
+	
 	.tin-pricing-table-row:nth-child(4n+1):not(:first-child) {
 		background-color: #222;
+		@include md-(phone) {
+			background-color: initial;
+		}
 	}
 	.tin-pricing-th:not(:first-child) {
 		font-size: 1rem;
@@ -115,23 +123,28 @@
 		text-transform: uppercase;
 		width: calc(50% / 3);
 	}
-	// .tin-pricing-th{
-	// 	@include md-(phone) {
-	// 		&:first-child {
-	// 			display: none;
-	// 		}
-	// 	}
-	// }
+	.tin-table-header .tin-pricing-th{
+		@include md-(phone) {
+			&:first-child {
+				display: none;
+			}
+		}
+	}
 	.tin-pricing-table-data {
 		color: #999;
 		padding: .8rem 1.2rem;
 		&:not(:first-child) {
-			text-align: center;
+			text-align: center; 
 		}
 		@include md-(phone) {
 			&:first-child {
 				display: none;
 			}
+			&:last-child {
+				border-right: 0;
+			}
+			padding: 0 1.2rem 0;
+			border-right: 1px solid #262626;
 		}
 	}
 	.alt-header {
