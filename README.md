@@ -2,5 +2,5 @@
 
 ## Used Technologys
 - HTML / CSS / SASS / JS Vanilla
-- WEBPACK 4
-- YARN
+- Webpack 4
+- Yarn
